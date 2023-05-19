@@ -33,7 +33,9 @@ SpellBook MakeEvilSpellBook(List<Spell> allSpells)
     return evilBook;
 }
 
-
+// spellbook class is the result of the function/method
+// Invoking MakeGoodSpellBook function/method
+// parameter - declaring argument is going to be a list of spell class called allSpells which is going into the fx of MakeGOodSpellBook, and the result of that fx is a SpellBook class
 SpellBook MakeGoodSpellBook(List<Spell> allSpells)
 {
     SpellBook goodBook = new SpellBook();
