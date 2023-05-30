@@ -28,6 +28,7 @@ while (indexes.Count < 3)
 {
     // candidate integer = random number between 0 and 6 (length assigned above)
     int candidate = random.Next(0, length);
+    // int candidate = GetRandomInt(0, insults.Count)
     // if index does not contain the candidate selected (avoids duplicate) continue and add that candidate to the indexes array
     if (!indexes.Contains(candidate))
     {
@@ -41,3 +42,16 @@ for (int i = 0; i < 3; i++)
     int index = indexes[i];
     Console.WriteLine(insults[index]);
 }
+
+// same as my for (int i = 0; i < 3; i++) loop above
+foreach (int index in indexes)
+{
+    System.Console.WriteLine(insults[index]);
+}
+
+/*
+ static int GetRandomInt(int min, int max) {
+    Random randomInt = newRandom();
+    return randomInt.Next(min, max);
+}
+*/
